@@ -1,0 +1,108 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ViewData["Title"]</title>
+</head>
+<body>
+
+    <h2>Welcome To Hayat Luxury Hotel</h2>
+    <h3>Dear Guest, Please Book Now. Before Booking See The Rooms Below </h3>
+   
+    <div class="MyDiv">
+        <img src="/images/hotel.jpg" alt="Jane" />
+    </div>
+    <div class="card">
+        <img src="/images/hotel.jpg" alt="Jane" />
+
+    </div>
+
+</body>
+</html> *@
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <h2>Welcome to Hyatt Hotel</h2>
+    <h3>Dear Guest, Please book now. Before booking please see the rooms below</h3>
+
+    <div class="myDiv">
+        <img src="/images/hotel.jpg" alt="Jane">
+    </div>
+
+    <div class="card">
+        <img src="/images/deluxe1.jpg" alt="Jane">
+        <div class="container">
+            <h2>Deluxe Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/deluxe2.jpg" alt="Jane">
+        <div class="container">
+            <h2>Deluxe Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/double.jpg" alt="Jane">
+        <div class="container">
+            <h2>Double Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/single.jpg" alt="Jane">
+        <div class="container">
+            <h2>Single Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/triple.jpg" alt="Jane">
+        <div class="container">
+            <h2>Triple Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/standard.jpg" alt="Jane">
+        <div class="container">
+            <h2>Standard Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
