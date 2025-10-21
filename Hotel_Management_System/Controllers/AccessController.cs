@@ -44,7 +44,7 @@ namespace Hotel_Management_System.Controllers
                     Properties);
                 return RedirectToAction("Index", "Home");
             }
-            ViewData["Message"] = "Invalid Credentials, Please try again.";
+            ViewData["Message"] = "Invalid Credentials, Please Try Again.";
             return View();
         }
     }
