@@ -1,3 +1,4 @@
+using Hotel_Management_System.DBC;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,7 +13,7 @@ namespace Hotel_Management_System
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<DBC.HotelDBContext>(option =>
+            builder.Services.AddDbContext<HotelDBContext>(option =>
 
                 option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
             ));
