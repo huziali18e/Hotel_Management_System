@@ -1,4 +1,7 @@
 using Hotel_Management_System.DBC;
+using Hotel_Management_System.Models.Booking;
+using Hotel_Management_System.Models.Payments;
+using Hotel_Management_System.Models.Room;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +19,18 @@ namespace Hotel_Management_System
             builder.Services.AddDbContext<HotelDBContext>(option =>
 
                 option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
+            ));
+            builder.Services.AddDbContext<RoomDBContext>(Action =>
+
+                Action.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
+            ));
+            builder.Services.AddDbContext<BookingDBContext>(chioces =>
+
+                chioces.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
+            ));
+            builder.Services.AddDbContext<PaymentDBContext>(picups =>
+
+                picups.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
             ));
 
             builder.Services.AddAuthentication(
